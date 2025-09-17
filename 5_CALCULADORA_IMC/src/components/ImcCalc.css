@@ -1,0 +1,36 @@
+#calc-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: .5rem;
+    color: #ccc;
+    font-size: 2rem;
+}
+
+.form-control input{
+    padding: 1.8rem 1rem;
+}
+
+.action-control{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2.6rem;
+}
