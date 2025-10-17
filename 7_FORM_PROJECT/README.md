@@ -1,16 +1,31 @@
-# React + Vite
+# Tela de Login em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma tela de login funcional construída com **React**, com foco em design moderno, responsividade e experiência de usuário intuitiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Tecnologias Utilizadas
 
-## React Compiler
+- **React** – Biblioteca JavaScript para construção da interface.
+- **CSS / SCSS** – Estilização da tela.
+- **React Router** (opcional) – Para navegação entre páginas.
+- **Axios** (opcional) – Para requisições HTTP a APIs de autenticação.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Formulário de login com campos de **e-mail** e **senha**.
+- Validação básica de campos.
+- Botão de login e opção de **esqueci a senha**.
+- Feedback visual para erros de login.
+- Responsividade para diferentes tamanhos de tela.
+
+---
+
+## ⚡ Como Rodar o Projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Caua-Ricken/tela-login-react.git

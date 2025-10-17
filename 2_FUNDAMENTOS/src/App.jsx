@@ -4,6 +4,7 @@ import FirstComponet from './components/FirstComponet'
 import MyComponent from './components/MyComponent'
 import TempleteExpression from './components/templeteExpression'
 import Events from './components/Events'
+import Teste from './components/Teste'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <TempleteExpression/>
     <MyComponent/>
     <Events/>
+    <Teste/>
     </>
   )
 }
