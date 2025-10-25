@@ -29,6 +29,10 @@ function App() {
     })
   }
 
+  const resetForm = () => {
+    setData(formTemplete);
+  };
+
   const formComponents = [
     <UserForm data={data} updateFiledHnadler={updateFiledHnadler}/>,
     <ReviewForm data={data} updateFiledHnadler={updateFiledHnadler}/>,
@@ -36,6 +40,16 @@ function App() {
   ]
 
   const {currentStep, currentComponent, changeStep, isLastStep, isFirstStep} = useForm(formComponents)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (isLastStep) {
+      console.log("Formulário Enviado! Dados:", data); 
+      resetForm(); 
+    }
+    changeStep(currentStep + 1, e);
+  };
 
   return (
    <div className="app">
@@ -47,7 +61,7 @@ function App() {
       <div className="form-container">
         <Steps currentStep={currentStep}/>
 
-        <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
+        <form onSubmit={handleSubmit}>
           <div className="inputs-container">
             {currentComponent}
           </div>
