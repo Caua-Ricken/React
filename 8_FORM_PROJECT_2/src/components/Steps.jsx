@@ -20,6 +20,8 @@ const Steps = ({currentStep}) => {
             <FiSend/>
         </div>
     </div>
+
+    
   )
 }
 
