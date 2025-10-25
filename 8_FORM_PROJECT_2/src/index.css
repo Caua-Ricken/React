@@ -6,3 +6,11 @@
   box-sizing: border-box;
   font-family: 'Barlow';
 }
+
+p{
+  color: #777;
+}
+
+body{
+  background-color: #f9faf5;
+}
