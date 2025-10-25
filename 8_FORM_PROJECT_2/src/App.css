@@ -34,7 +34,7 @@
 .form-control{
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1.4rem;
   margin-bottom: 2rem;
 }
 
