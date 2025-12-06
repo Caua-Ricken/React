@@ -8,12 +8,12 @@ import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
       <div>
         <NavBar/>
         <Outlet/>
+        <p>tela principal</p>
         <p>footer</p>
       </div>
     
