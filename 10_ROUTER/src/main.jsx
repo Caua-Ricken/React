@@ -16,12 +16,16 @@ import Products from './routes/Products.jsx'
 // 8 - rotas aninhadas
 import Info from './routes/Info.jsx'
 
+// 9 - Search params
+import Search from './routes/Search.jsx'
+
 
 // 1 - configurando o router
 import {
   createBrowserRouter,
   RouterProvider,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -52,6 +56,18 @@ const router = createBrowserRouter([
       {
         path: 'products/:id/info',
         element: <Info/>
+      },
+
+      // 9 - Search
+      {
+        path: 'search',
+        element: <Search/>
+      },
+
+      // 10 - redirecionamento
+      {
+        path: 'teste',
+        element: <Navigate to='/'/>
       }
     ]
   },
