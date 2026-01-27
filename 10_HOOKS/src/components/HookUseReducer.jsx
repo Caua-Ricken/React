@@ -17,17 +17,34 @@ const HookUseReducer = () => {
     ]
 
     const pasteReducer = (state, action) => {   
+        switch(action?.type) {
+            case 'ADD':
+                const newPaste = {
+                    id: Math.random(),
+                    text: pasteText
+                }
+                setPasteText('')
+
+                return [...state, newPaste]
+            case 'REMOVE':
+                return state.filter((task) => task.id !== action.id)        
+            default:
+                return state
+        }
     }
 
-    const [pastes, dispatchPaste] = useReducer(pasteReducer, initialPaste)
-
     const [pasteText, setPasteText] = useState('')
+    const [pastes, dispatchPaste] = useReducer(pasteReducer, initialPaste)
 
     const handleSubmit =(e) => {
         e.preventDefault()
 
-        dispatchPaste()
+        dispatchPaste({type: 'ADD'})
     } 
+
+    const removePast = (id) => {
+        dispatchPaste({type: 'REMOVE', id})
+    }
 
   return (
     <div>
@@ -44,7 +61,7 @@ const HookUseReducer = () => {
         </form>
         <ul>
             {pastes.map((past) => (
-                <li key={past.id}>{past.id} : {past.text}</li>
+                <li key={past.id} onDoubleClick={() => removePast(task.id)}>{past.text}</li>
             ))}
         </ul>
 
