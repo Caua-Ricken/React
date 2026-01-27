@@ -44,7 +44,7 @@ const HookUseReducer = () => {
         </form>
         <ul>
             {pastes.map((past) => (
-                <li key={past.id}>{past.title}</li>
+                <li key={past.id}>{past.id} : {past.text}</li>
             ))}
         </ul>
 
